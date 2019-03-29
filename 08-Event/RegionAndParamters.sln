@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module.Dialog", "Module.Dialog\Module.Dialog.csproj", "{BCA09F39-F194-4B2F-B182-E7DA78DEA637}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dialog", "Dialog\Dialog.csproj", "{EE99B412-90A8-4BA3-A4F5-ADC4780DF6AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCA09F39-F194-4B2F-B182-E7DA78DEA637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCA09F39-F194-4B2F-B182-E7DA78DEA637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCA09F39-F194-4B2F-B182-E7DA78DEA637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCA09F39-F194-4B2F-B182-E7DA78DEA637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE99B412-90A8-4BA3-A4F5-ADC4780DF6AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE99B412-90A8-4BA3-A4F5-ADC4780DF6AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE99B412-90A8-4BA3-A4F5-ADC4780DF6AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE99B412-90A8-4BA3-A4F5-ADC4780DF6AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {519C9062-84E5-4A90-9023-EF44CAC6A49C}
+	EndGlobalSection
+EndGlobal
