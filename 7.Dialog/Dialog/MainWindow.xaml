@@ -15,8 +15,8 @@
         <StackPanel HorizontalAlignment="Center">
             <CheckBox
                 Margin="20"
-                Content="Is Model?"
-                IsChecked="{Binding IsModel}" />
+                Content="Is Modal?"
+                IsChecked="{Binding IsModal}" />
             <Button
                 Margin="20"
                 Command="{Binding ShowDialogCommand}"

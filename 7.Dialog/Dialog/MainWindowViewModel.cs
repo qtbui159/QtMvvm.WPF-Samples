@@ -11,20 +11,20 @@ using Module.Dialog;
 
 namespace Dialog
 {
-    public class MainWindowViewModel:ViewModelBase
+    public class MainWindowViewModel : ViewModelBase
     {
         public RelayCommand ShowDialogCommand { get; private set; }
 
-        private bool m_IsModel;
-        public bool IsModel
+        private bool m_IsModal;
+        public bool IsModal
         {
             get
             {
-                return m_IsModel;
+                return m_IsModal;
             }
             set
             {
-                SetProperty(ref m_IsModel, value);
+                SetProperty(ref m_IsModal, value);
             }
         }
 
@@ -49,8 +49,8 @@ namespace Dialog
 
         private void ShowDialog()
         {
-           var dialogRequest= DialogManager.Build(nameof(DialogView), IsModel,new CustomDialogInfo() {Confirm=true,Parameter="Dialog Parameter" }).SetWidthAndHeight(300,300).SetWindowStartupLocation(System.Windows.WindowStartupLocation.CenterScreen);
-            dialogRequest.SetClosedAction(info => 
+            var dialogRequest = DialogManager.Build(nameof(DialogView), IsModal, new CustomDialogInfo() { Confirm = true, Parameter = "Dialog Parameter" }).SetWidthAndHeight(300, 300).SetWindowStartupLocation(System.Windows.WindowStartupLocation.CenterScreen);
+            dialogRequest.SetClosedAction(info =>
             {
                 if (info.Confirm == true)
                 {
@@ -62,7 +62,7 @@ namespace Dialog
                 }
             });
             dialogRequest.Raise();
-           
+
         }
     }
 }
