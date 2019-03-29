@@ -1,0 +1,19 @@
+﻿<Window x:Class="EventToCommand.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EventToCommand"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:qt="http://QtMvvm.com"
+        mc:Ignorable="d" qt:ViewModelAutoWired.Value="True"
+        Title="MainWindow" Height="450" Width="800">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="MouseMove">
+            <qt:EventToCommand Command="{Binding MouseMoveCommand}" PassEventArgsToCommand="True"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid>
+        <TextBlock FontSize="20" Text="{Binding Position}"></TextBlock>
+    </Grid>
+</Window>
