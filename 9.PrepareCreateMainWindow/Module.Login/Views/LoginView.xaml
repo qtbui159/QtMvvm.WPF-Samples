@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="Module.Login.Views.LoginView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Module.Login.Views"
+             xmlns:qt="http://QtMvvm.com"
+             mc:Ignorable="d" qt:ViewModelAutoWired.Value="True"
+             Width="400" Height="200" FontSize="20"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock>Correct Key:123456</TextBlock>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Center">
+            <TextBlock VerticalAlignment="Center">Input Key:</TextBlock>
+            <TextBox Width="150" VerticalAlignment="Center"
+                     Text="{Binding Key,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
+            <Button Margin="20,0,0,0" Command="{Binding LoginCommand}">Login</Button>
+        </StackPanel>
+    </Grid>
+</UserControl>
