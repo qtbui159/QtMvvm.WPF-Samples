@@ -1,0 +1,8 @@
+﻿<qtMvvm:QtApplication
+    x:Class="Dialog.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Dialog"
+    xmlns:qtMvvm="http://QtMvvm.com">
+    <Application.Resources />
+</qtMvvm:QtApplication>
